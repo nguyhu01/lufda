@@ -1,0 +1,90 @@
+
+
+.about-team {
+  position: relative;
+  background-image: url('../public/static/img/simon.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(76, 175, 80, 0.8), rgba(33, 150, 243, 0.8));
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: top;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-content {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.about-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-content p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+/* 
+.watch-game-btn {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.watch-game-btn:hover {
+  background-color: #1976D2;
+} */
+
+.player-image {
+  flex: 1;
+  text-align: center;
+}
+
+.player-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .about-content, .player-image {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .about-content {
+    padding-right: 0;
+  }
+}

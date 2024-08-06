@@ -1,0 +1,120 @@
+.team-roster {
+    position: relative;
+    background-image: url('../public/static/img/regionals_2024.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    overflow: hidden;
+  }
+  
+  .team-roster::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.8) 50%, rgba(0, 0, 0, 0.6) 50%);
+  }
+  
+  .roster-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .roster-content h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .roster-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+  
+  .highlight {
+    color: #4CAF50;
+  }
+  
+  .roster-content p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .player-item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .player-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .player-item h4 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .player-item p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+  
+  .team-roster-carousel .carousel-control-prev,
+  .team-roster-carousel .carousel-control-next {
+    width: 5%;
+  }
+  
+  .team-roster-carousel .carousel-control-prev-icon,
+  .team-roster-carousel .carousel-control-next-icon {
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  @media (max-width: 991px) {
+    .player-image {
+      width: 70px;
+      height: 70px;
+    }
+    
+    .player-item h4 {
+      font-size: 0.8rem;
+    }
+    
+    .player-item p {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .player-image {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .player-image {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .player-item h4 {
+      font-size: 0.7rem;
+    }
+    
+    .player-item p {
+      font-size: 0.6rem;
+    }
+  }

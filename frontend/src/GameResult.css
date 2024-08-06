@@ -1,0 +1,46 @@
+
+
+.game-result h2 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+.game-result h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.team-result .team-name {
+    font-size: 1.2rem;
+}
+
+.team-result .score {
+    font-size: 3rem;
+}
+
+.vs {
+    font-size: 3rem;
+    font-weight: 700;
+    /* color: var(--dark-color); */
+    color: rgb(36, 179, 91);
+}
+
+.game-details {
+    font-size: 1rem;
+    color: var(--dark-color);
+    margin-bottom: 2rem;
+    }
+
+img.rounded-circle.mb-2 {
+    max-height: 200px;
+}
+
+p.game-details.text-muted.mb-4 {
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+

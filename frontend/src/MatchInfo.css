@@ -1,0 +1,26 @@
+
+
+.match-info {
+  background-color: #343a40;
+}
+
+.match-info .countdown div {
+  text-align: center;
+}
+
+.match-info h2 {
+  color: var(--light-color);
+}
+
+.match-info h4 {
+  font-size: 1.2rem;
+}
+
+.match-info .display-4 {
+  font-size: 2rem;
+}
+
+.theheader {
+  padding-bottom: 25px;
+  font-size: 40px;
+}

@@ -1,0 +1,12 @@
+.games {
+  padding: 50px;
+  text-align: center;
+}
+
+.games h1 {
+  font-size: 36px;
+}
+
+.games p {
+  font-size: 18px;
+}

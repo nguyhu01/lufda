@@ -1,0 +1,73 @@
+
+
+.game-schedule h2 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .game-schedule h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .match-card {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .match-card .team-name {
+    font-size: 1.2rem;
+  }
+  
+  .match-card .vs {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+  }
+  
+  .game-schedule-carousel .carousel-control-prev,
+  .game-schedule-carousel .carousel-control-next {
+    width: 5%;
+  }
+  
+  .game-schedule-carousel .carousel-control-prev-icon,
+  .game-schedule-carousel .carousel-control-next-icon {
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .game-schedule-carousel .carousel-indicators {
+    bottom: -40px;
+  }
+  
+  .game-schedule-carousel .carousel-indicators li {
+    background-color: var(--dark-color);
+  }
+
+  /* addition for slide nodes */
+
+  .carousel-page-indicator {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carousel-page-indicator .dot {
+  height: 10px;
+  width: 10px;
+  background-color: #ADD8E6;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-page-indicator .dot.active {
+  background-color: #717171;
+}
+
+.rounded-circle {
+  max-height: 60px;
+}
