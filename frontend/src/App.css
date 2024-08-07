@@ -17,3 +17,7 @@ body, html {
   color: var(--dark-color);
 }
 
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

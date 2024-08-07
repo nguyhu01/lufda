@@ -50,7 +50,7 @@ nav ul {
   list-style-type: none;
   display: flex;
   gap: 2.1rem;
-  align-items: center; /* Center the list items vertically */
+  align-items: center; 
 }
 
 nav ul li a {

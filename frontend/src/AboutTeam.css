@@ -65,13 +65,19 @@
 .player-image {
   flex: 1;
   text-align: center;
+  margin-left: 50px;
+
+  
 }
 
 .player-image img {
   max-width: 100%;
-  height: auto;
+  /* height: auto;  */
+  height: 380px; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover; 
+  
 }
 
 @media (max-width: 768px) {

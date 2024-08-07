@@ -50,7 +50,7 @@ function GameSchedule() {
   return (
     <section className="game-schedule py-5">
       <Container className="text-center">
-        <h2 className="text-muted">Game Schedule</h2>
+        <h2 className="text-muted">Luf-Schedule</h2>
         <h3 className="mb-4">Game Schedule</h3>
         <Carousel id="gameScheduleCarousel" className="game-schedule-carousel" onSelect={(selectedIndex) => setActiveIndex(selectedIndex)}>
             {carouselItems}
