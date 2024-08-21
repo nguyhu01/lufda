@@ -28,7 +28,7 @@
   position: relative;
   padding: 30px 40px 135px 40px;
   /* background: rgba(240, 244, 240, 0.9); */
-  background: rgba(35, 44, 35, 0.6);
+  background: rgba(13, 17, 13, 0.6);
   border-radius: 20px;
   
 }
@@ -99,7 +99,7 @@
 
 .login-form .group .check + label {
   /* color: #b9c6be; */
-  color: #d2f3de;
+  color: #e9f4ed;
   text-align: left;
 }
 
@@ -110,7 +110,7 @@
 
 .login-form .group .label {
   /* color: #2a3d31; */
-  color: #d2f3de;
+  color: #e9f4ed;
 }
 
 .login-form .group .check:checked + label .icon:before {

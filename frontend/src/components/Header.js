@@ -32,7 +32,7 @@ function Header() {
     <header id="header">
       <div className="header-content">
         <Link to="/" className="logo">
-          <img src="/static/img/lufda.jpg" alt="Lufda logo" />
+          <img src="/static/img/lufda_no_bg.png" alt="Lufda logo" />
           <span className='lufda-header'>LUFDA</span>
         </Link>
         <nav>

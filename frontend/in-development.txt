@@ -1,0 +1,6 @@
+Here are the in-development features of the Lufda website:
+
+1. A public chatbot to help users navigate and ask questions about Lufda.
+2. An internal chatbot to help captains train new people and plan out practices.
+3. Complete the blog route for every members to be able to write blogs about the team.
+4. A registration form for recruitment.

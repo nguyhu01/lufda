@@ -38,7 +38,7 @@ function MatchInfo() {
       <div className="container text-center">
         <div className="row align-items-center">
           <div className="col-md-4 mb-3 mb-md-0">
-            <img src="https://cdn.ultiworld.com/wordpress/wp-content/uploads/2013/01/luther-LUFDA.png?x58670" alt="Phoenix" className="rounded-circle" />
+            <img src="/static/img/lufda_no_bg.png" alt="Lufda" className="rounded-circle" />
             <h4 className="mt-2">LUFDA</h4>
           </div>
           <div className="col-md-4">
@@ -61,7 +61,7 @@ function MatchInfo() {
                 <p>Seconds</p>
               </div>
             </div>
-            <a href="https://collegechampionships.usaultimate.org/team/luther-lufda/" className="btn btn-success mt-3">BUY TICKET</a>
+            <a href="https://collegechampionships.usaultimate.org/team/luther-lufda/" className="btn btn-success mt-3">JOIN THE TEAM</a>
           </div>
           <div className="col-md-4 mt-3 mt-md-0">
             <img src="/static/img/radicals.png" alt="Opponent" className="rounded-circle" />

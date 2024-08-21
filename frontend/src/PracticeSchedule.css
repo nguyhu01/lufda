@@ -1,78 +1,3 @@
-/* 
-
-   .schedule-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #5eb2ed;
-
-  }
-  
-  .schedule-page h2 {
-    color: #defee1;
-    margin-top: 150px;
-  }
-  
-
-   .event-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    
-  }
-  
-  .event-form input, .event-form button {
-    margin: 5px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 20px;
-  }
-  
-  .event-form button {
-    background-color: #4aab52;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .event-form button:hover {
-    background-color: #3a8b42;
-  }
-  
-
-  .rbc-calendar {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 1200px;
- 
-  }
-  
-  .rbc-toolbar {
-    background: #4aab52;
-    color: white;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .rbc-event {
-    background: #2a3d31;
-    border-radius: 5px;
-    color: white;
-  }
-  
-  .rbc-day-bg.rbc-today {
-    background: rgba(133, 201, 135, 0.2);
-  }
-  
-  .rbc-header {
-    padding-bottom: 20px;
-    background-color:#f3fff3; 
-  } */
 
   .schedule-page {
     display: flex;
@@ -129,17 +54,17 @@
   }
   
   .rbc-event {
-    background: #28d77a; /* Blue event color */
+    background: #28d77a;
     border-radius: 5px;
     color: white;
   }
   
   .rbc-day-bg.rbc-today {
-    background: rgba(0, 123, 255, 0.2); /* Light blue background for today */
+    background: rgba(0, 123, 255, 0.2); 
   }
   
   .rbc-header {
     padding-bottom: 20px;
-    background-color: #f0f7fc; /* Light background color for headers */
+    background-color: #f0f7fc; 
   }
   

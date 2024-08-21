@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import { AuthProvider } from './components/AuthContext';
+import process from 'process';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

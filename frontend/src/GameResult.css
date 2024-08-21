@@ -44,3 +44,11 @@ p.game-details.text-muted.mb-4 {
   
 }
 
+p.team-name {
+  font-style: normal;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(81, 84, 91);
+  letter-spacing: 2px;
+
+}
+

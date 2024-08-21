@@ -10,7 +10,7 @@ function GameResult() {
         <div className="row align-items-center mb-4">
           <div className="col-md-4">
             <div className="team-result">
-              <img src="https://cdn.ultiworld.com/wordpress/wp-content/uploads/2013/01/luther-LUFDA.png?x58670" alt="Lufda" className="rounded-circle mb-2" />
+              <img src="/static/img/lufda_no_bg.png" alt="Lufda" className="rounded-circle mb-2" />
               <div>
                 <p className="team-name font-weight-bold fw-bold">LUFDA</p>
                 <b className="score display-4 text-success fw-bold">12</b>

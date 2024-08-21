@@ -17,7 +17,7 @@ function Home() {
       <section className="hero d-flex align-items-center justify-content-center text-center">
         <div className="hero-content">
           <h1>Luther Ultimate Flying Disc Association</h1>
-          <p>A D-III College Frisbee Club at Luther College.</p>
+          <p>A D-III College Ultimate Frisbee Club at Luther College.</p>
           <div>
             <button className="btn btn-primary m-2">Watch match</button>
             <button className="btn btn-success m-2">Join Us</button>

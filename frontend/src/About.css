@@ -1,17 +1,8 @@
-.games {
+.about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
   text-align: center;
-}
-
-
-.games h1 {
-  font-size: 36px;
-}
-
-.games p {
-  font-size: 18px;
 }

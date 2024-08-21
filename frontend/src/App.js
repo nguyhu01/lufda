@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import { AuthContext } from './components/AuthContext';
 import Header from './components/Header';
 import Home from './components/Home';
-import AboutTeam from './components/AboutTeam'; //Need to make a different page for this
+import About from './components/About'; 
 import Games from './components/Games';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
@@ -20,7 +20,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutTeam />} />
+          <Route path="/about" element={<About />} />
           <Route path="/games" element={<Games />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />

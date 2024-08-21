@@ -1,9 +1,10 @@
 .lufda-header{
   font-size: 40px;
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 1rem 5%;
   position: fixed;
   width: 100%;
@@ -12,7 +13,7 @@ header {
 }
 
 header.scrolled {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 1);
   padding: 16px 80px;
 
 }
@@ -33,11 +34,12 @@ header.scrolled {
   font-weight: 700;
   font-size: 1.5rem;
   text-decoration: none;
+  
 }
 
 .logo img {
-  width: 40px;
-  margin-right: 10px;
+  width: 90px;
+  
 }
 
 nav {

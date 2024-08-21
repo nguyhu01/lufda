@@ -2,6 +2,7 @@
     color: #006400;
     font-size: 2rem; 
     transition: color 0.3s;
+    margin-top: 7px;
   }
   
 .social-icon:hover {
@@ -9,8 +10,10 @@
 }
 
 li {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     padding-bottom: 10px;
+    font-size: 1rem;
+    
 }
   
 p {
@@ -22,7 +25,10 @@ p.copyright {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h5 {
-    font-family:'Courier New', Courier, monospace;
+footer h5 {
     padding-bottom: 20px;
+    font-weight: 700;
+    color: #1aa11a;
+   
 }
+

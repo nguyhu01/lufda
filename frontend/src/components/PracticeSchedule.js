@@ -1,35 +1,27 @@
-// NEED TO IMPLEMENT: Save event to FireStore to distribute among everyone.
+// NEED TO IMPLEMENT: Save event to FireStore to distribute among everyone (done)
 //  ALSO IF I HAVE TIME: Only captains can modify the schedule.
+
+
 
 import React, { useState, useEffect } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { firestore } from '../firebase'; 
-import { collection, addDoc, getDocs } from 'firebase/firestore';
+import { collection, addDoc, getDocs, deleteDoc, doc } from 'firebase/firestore';
 import '../PracticeSchedule.css';
 
 const localizer = momentLocalizer(moment);
 
-const initialEvents = [
-//   {
-//     title: 'Practice 1',
-//     start: new Date(2024, 7, 8, 10, 0),
-//     end: new Date(2024, 7, 8, 12, 0),
-//   },
-//   {
-//     title: 'Practice 2',
-//     start: new Date(2023, 7, 9, 14, 0),
-//     end: new Date(2023, 7, 9, 16, 0),
-//   },
-];
+const initialEvents = [];
 
 const PracticeSchedule = () => {
   const [events, setEvents] = useState(initialEvents);
   const [newEvent, setNewEvent] = useState({
     title: '',
     start: '',
-    end: ''
+    end: '',
+    color: '#3174ad' // Default color
   });
 
   useEffect(() => {
@@ -45,7 +37,7 @@ const PracticeSchedule = () => {
             end: doc.data().end.toDate(),
         }));
         setEvents(eventsList);
-    } catch (error) {
+      } catch (error) {
         console.error("Error fetching events: ", error);
       }
     };
@@ -61,24 +53,51 @@ const PracticeSchedule = () => {
     }));
   };
 
-
   const handleAddEvent = async (e) => {
     e.preventDefault();
-    const { title, start, end } = newEvent;
+    const { title, start, end, color } = newEvent;
     const newEventObject = {
       title,
       start: new Date(start),
-      end: new Date(end)
+      end: new Date(end),
+      color
     };
 
     try {
       // Add event to Firestore
       const docRef = await addDoc(collection(firestore, 'events'), newEventObject);
       setEvents([...events, { id: docRef.id, ...newEventObject }]);
-      setNewEvent({ title: '', start: '', end: '' });
+      setNewEvent({ title: '', start: '', end: '', color: '#3174ad' });
     } catch (error) {
       console.error("Error adding event: ", error);
     }
+  };
+
+  const handleDeleteEvent = async (eventId) => {
+    const confirmed = window.confirm("Are you sure you want to delete this event?");
+    if (confirmed) {
+      try {
+        await deleteDoc(doc(firestore, 'events', eventId));
+        setEvents(events.filter(event => event.id !== eventId));
+      } catch (error) {
+        console.error("Error deleting event: ", error);
+      }
+    }
+  };
+
+  const eventStyleGetter = (event) => {
+    const backgroundColor = event.color;
+    const style = {
+      backgroundColor,
+      borderRadius: '5px',
+      opacity: 0.8,
+      color: 'white',
+      border: '0px',
+      display: 'block'
+    };
+    return {
+      style
+    };
   };
 
   return (
@@ -109,6 +128,12 @@ const PracticeSchedule = () => {
           onChange={handleInputChange} 
           required 
         />
+        <input 
+          type="color" 
+          name="color" 
+          value={newEvent.color} 
+          onChange={handleInputChange} 
+        />
         <button type="submit">Add Event</button>
       </form>
       <Calendar
@@ -117,6 +142,11 @@ const PracticeSchedule = () => {
         startAccessor="start"
         endAccessor="end"
         style={{ height: 500, margin: '50px' }}
+        defaultView="week"
+        scrollToTime={new Date(1970, 1, 1, 11, 0, 0)}
+        eventPropGetter={eventStyleGetter}
+        selectable
+        onSelectEvent={(event) => handleDeleteEvent(event.id)}
       />
     </div>
   );
